@@ -1,0 +1,22 @@
+{
+  "name": "nodebb-plugin-checkin",
+  "version": "0.1.0",
+  "description": "A NodeBB plugin to allow user checking-in daily to get reputation reward.",
+  "main": "library.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mudkipme/nodebb-plugin-checkin.git"
+  },
+  "keywords": [
+    "nodebb"
+  ],
+  "author": "Mudkip",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mudkipme/nodebb-plugin-checkin/issues"
+  },
+  "homepage": "https://github.com/mudkipme/nodebb-plugin-checkin#readme",
+  "nbbpm": {
+    "compatibility": "^1.7.0"
+  }
+}
