@@ -1,0 +1,13 @@
+{
+    "check-in": "Check-In",
+    "member": "Member",
+    "days": "Days",
+    "today-rank": "Today Rank",
+    "total-rank": "Total Rank",
+    "continuous-rank": "Continuous Rank",
+    "post-reward": "You may receive double reward when submitting your first topic or reply today.",
+    "success": "Checked-in!",
+    "success-message": "Received %1 reputation.",
+    "days-message": "You have kept checking-in in %1 sequential day(s), and %2 day(s) in total.",
+    "info-message": "You are #%1 member checked-in today."
+}

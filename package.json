@@ -18,5 +18,8 @@
   "homepage": "https://github.com/mudkipme/nodebb-plugin-checkin#readme",
   "nbbpm": {
     "compatibility": "^1.7.0"
+  },
+  "engines": {
+    "node": ">=8"
   }
 }

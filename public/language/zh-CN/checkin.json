@@ -1,0 +1,13 @@
+{
+    "check-in": "签到",
+    "member": "会员",
+    "days": "天数",
+    "today-rank": "今日排行",
+    "total-rank": "总排行",
+    "continuous-rank": "连续排行",
+    "post-reward": "今天发帖后，可以得到双倍的奖励。",
+    "success": "签到成功！",
+    "success-message": "获得 %1 声望。",
+    "days-message": "您已经连续签到 %1 天，一共签到 %2 天。",
+    "info-message": "您是今天第 %1 位签到的会员。"
+}

@@ -1,0 +1,13 @@
+{
+    "check-in": "簽到",
+    "member": "會員",
+    "days": "天數",
+    "today-rank": "今日排行",
+    "total-rank": "總排行",
+    "continuous-rank": "連續排行",
+    "post-reward": "今天發帖後，可以得到雙倍的獎勵。",
+    "success": "簽到成功！",
+    "success-message": "獲得 %1 聲望。",
+    "days-message": "您已經連續簽到 %1 天，一共簽到 %2 天。",
+    "info-message": "您是今天第 %1 位簽到的會員。"
+}

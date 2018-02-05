@@ -1,5 +1,16 @@
 {
   "library": "library.js",
   "hooks": [
-  ]
+    {
+      "hook": "filter:navigation.available",
+      "method": "getNavigation"
+    },
+    {
+      "hook": "static:app.load",
+      "method": "load"
+    }
+  ],
+  "languages": "public/language",
+  "defaultLang": "en-US",
+  "templates": "./public/templates"
 }
