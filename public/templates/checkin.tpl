@@ -1,21 +1,28 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
 
+<!-- IF checkedIn -->
 <div class="alert alert-info" role="alert">
-    [[checkin:info-message, 1]]
+    [[checkin:info-message, {rank}]]
     [[checkin:days-message, 1, 1]]
+    <!-- IF postReward -->
     [[checkin:post-reward]]
+    <!-- ENDIF postReward -->
 </div>
+<!-- ELSE -->
 <div class="alert alert-success" role="alert">
     <p>
         <strong>[[checkin:success]]</strong>
-        [[checkin:success-message, 1, 1]]
-        [[checkin:info-message, 1]]
+        [[checkin:success-message, {reward}]]
+        [[checkin:info-message, {rank}]]
     </p>
     <p>
         [[checkin:days-message, 1, 1]]
+        <!-- IF postReward -->
         [[checkin:post-reward]]
+        <!-- ENDIF postReward -->
     </p>
 </div>
+<!-- ENDIF checkedIn -->
 <div class="row">
     <div class="col-md-4">
         <h4>[[checkin:today-rank]]</h4>

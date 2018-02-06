@@ -8,6 +8,14 @@
     {
       "hook": "static:app.load",
       "method": "load"
+    },
+    {
+      "hook": "filter:post.create",
+      "method": "postCreate"
+    },
+    {
+      "hook": "filter:user.whitelistFields",
+      "method": "appendUserFieldsWhitelist"
     }
   ],
   "languages": "public/language",

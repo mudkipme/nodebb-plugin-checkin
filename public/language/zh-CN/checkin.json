@@ -9,5 +9,6 @@
     "success": "签到成功！",
     "success-message": "获得 %1 声望。",
     "days-message": "您已经连续签到 %1 天，一共签到 %2 天。",
-    "info-message": "您是今天第 %1 位签到的会员。"
+    "info-message": "您是今天第 %1 位签到的会员。",
+    "too-busy": "忙碌中，请重试。"
 }
