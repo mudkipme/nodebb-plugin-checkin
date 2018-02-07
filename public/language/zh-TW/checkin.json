@@ -10,5 +10,6 @@
     "success-message": "獲得 %1 聲望。",
     "days-message": "您已經連續簽到 %1 天，一共簽到 %2 天。",
     "info-message": "您是今天第 %1 位簽到的會員。",
-    "too-busy": "忙碌中，請重試。"
+    "too-busy": "忙碌中，請重試。",
+    "post-message": "簽到後第一次發帖，獲得 %1 聲望。"
 }

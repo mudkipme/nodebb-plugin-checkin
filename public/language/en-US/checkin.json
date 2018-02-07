@@ -9,5 +9,6 @@
     "success": "Checked-in!",
     "success-message": "Received %1 reputation.",
     "days-message": "You have kept checking-in in %1 sequential day(s), and %2 day(s) in total.",
-    "info-message": "You are #%1 member checked-in today."
+    "info-message": "You are #%1 member checked-in today.",
+    "post-message": "You received %1 reputation for submitting your first topic or reply today."
 }
