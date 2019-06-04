@@ -1,6 +1,6 @@
 const util = require('util');
-const nconf = require.main.require('nconf');
-const _ = require.main.require('lodash');
+const nconf = module.parent.require('nconf');
+const _ = module.parent.require('lodash');
 const User = require.main.require('./user');
 const db = require.main.require('./database');
 const Notifications = require.main.require('./notifications');
@@ -72,6 +72,7 @@ const Checkin = {
                 util.promisify(db.isSortedSetMember)(`checkin-plugin:${today}`, data.uid),
                 util.promisify(User.getUserField)(data.uid, 'checkinPendingReward')
             ]);
+            //TODO: sort "Most reputation" after awarding reputation.
             if (checkedIn && checkinPendingReward > 0) {
                 await Promise.all([
                     util.promisify(User.incrementUserFieldBy)(data.uid, 'reputation', checkinPendingReward),
