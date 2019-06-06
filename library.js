@@ -1,11 +1,11 @@
 const util = require('util');
 const nconf = module.parent.require('nconf');
 const _ = module.parent.require('lodash');
-const User = require.main.require('./user');
-const db = require.main.require('./database');
-const Notifications = require.main.require('./notifications');
-const routeHelpers = require.main.require('./routes/helpers');
-const controllerHelpers = require.main.require('./controllers/helpers');
+const User = module.parent.require('./user');
+const db = module.parent.require('./database');
+const Notifications = module.parent.require('./notifications');
+const routeHelpers = module.parent.require('./routes/helpers');
+const controllerHelpers = module.parent.require('./controllers/helpers');
 
 const checkinConfig = nconf.get('checkin') || {
     postReward: true,
