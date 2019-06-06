@@ -166,6 +166,7 @@ async function doCheckin(uid) {
     const users = _.keyBy(await util.promisify(User.getUsersFields)(uids, ['username', 'userslug']), 'uid');
 
     const [todayMembers, continuousMembers, totalMembers] = [todayList, continuousList, totalList]
+        .map(list => list.filter(item => item !== undefined))
         .map(list => list.map(item => ({
             username: users[item.value].username,
             userslug: users[item.value].userslug,
