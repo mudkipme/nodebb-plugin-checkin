@@ -72,6 +72,7 @@ const Checkin = {
                 util.promisify(db.isSortedSetMember)(`checkin-plugin:${today}`, data.uid),
                 util.promisify(User.getUserField)(data.uid, 'checkinPendingReward')
             ]);
+            //TODO: sort "Most reputation" after awarding reputation.
             if (checkedIn && checkinPendingReward > 0) {
                 await Promise.all([
                     util.promisify(User.incrementUserFieldBy)(data.uid, 'reputation', checkinPendingReward),
@@ -162,9 +163,10 @@ async function doCheckin(uid) {
     ]);
 
     const uids = _.map(_.concat(todayList, continuousList, totalList), 'value');
-    const users = _.keyBy(await util.promisify(User.getUsersFields)(uids, ['username', 'userslug']), 'uid');
+    const users = _.keyBy(await util.promisify(User.getUsersFields)(uids, ['username', 'userslug']), 'uid')
 
     const [todayMembers, continuousMembers, totalMembers] = [todayList, continuousList, totalList]
+        .map(list => list.filter(item => users[item.value] !== undefined))
         .map(list => list.map(item => ({
             username: users[item.value].username,
             userslug: users[item.value].userslug,
