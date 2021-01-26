@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-checkin",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A NodeBB plugin to allow user checking-in daily to get reputation reward.",
   "main": "library.js",
   "repository": {
